@@ -1,0 +1,315 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact - Heartwood Wellbeing">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-4">
+          <img src="/assets/images/mainlogofinal.jpg" alt="Heartwood Wellbeing Logo" class="h-12 w-auto">
+          <span class="text-xl font-serif font-semibold text-warm-brown">Heartwood Wellbeing</span>
+        </div>
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="/" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Home</a></li>
+          <li><a href="/services" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Services</a></li>
+          <li><a href="/meet-kelly" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Meet Kelly</a></li>
+          <li><a href="/contact" class="text-coral-warmth font-medium">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="py-32 bg-off-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl font-serif font-semibold text-warm-brown mb-6 text-center">💬 Get In Touch</h1>
+      <p class="text-xl text-text-medium mb-12 text-center">Ready to learn more about our holistic companion care? Fill out the form below and Kelly will be in touch within 24 hours to schedule your <strong>free 20-minute discovery call</strong>.</p>
+      
+      <!-- Contact Form -->
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+        <form id="contactForm" action="https://formspree.io/f/xjkrzjpq" method="POST" class="space-y-6">
+          
+          <!-- Your Information Section -->
+          <div class="border-b border-gray-200 pb-6">
+            <h3 class="text-2xl font-serif font-semibold text-warm-brown mb-6">Your Information</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="yourName" class="block text-sm font-semibold text-text-dark mb-2">Your Name *</label>
+                <input 
+                  type="text" 
+                  id="yourName" 
+                  name="yourName" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                  placeholder="Your full name"
+                />
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-semibold text-text-dark mb-2">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                  placeholder="your@email.com"
+                />
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-text-dark mb-2">Phone Number *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                  placeholder="07XXX XXXXXX"
+                />
+              </div>
+              
+              <div>
+                <label for="relationship" class="block text-sm font-semibold text-text-dark mb-2">Your Relationship *</label>
+                <select 
+                  id="relationship" 
+                  name="relationship" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                >
+                  <option value="">Select relationship</option>
+                  <option value="son-daughter">Son/Daughter</option>
+                  <option value="spouse-partner">Spouse/Partner</option>
+                  <option value="grandchild">Grandchild</option>
+                  <option value="care-manager">Care Manager</option>
+                  <option value="friend">Friend</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Care Recipient Information -->
+          <div class="border-b border-gray-200 pb-6">
+            <h3 class="text-2xl font-serif font-semibold text-warm-brown mb-6">About Your Loved One</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="clientName" class="block text-sm font-semibold text-text-dark mb-2">Their Name *</label>
+                <input 
+                  type="text" 
+                  id="clientName" 
+                  name="clientName" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                  placeholder="Name of person needing care"
+                />
+              </div>
+              
+              <div>
+                <label for="age" class="block text-sm font-semibold text-text-dark mb-2">Age Range</label>
+                <select 
+                  id="age" 
+                  name="age" 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                >
+                  <option value="">Select age range</option>
+                  <option value="60-70">60-70</option>
+                  <option value="70-80">70-80</option>
+                  <option value="80-90">80-90</option>
+                  <option value="90+">90+</option>
+                </select>
+              </div>
+              
+              <div class="md:col-span-2">
+                <label for="location" class="block text-sm font-semibold text-text-dark mb-2">Location *</label>
+                <input 
+                  type="text" 
+                  id="location" 
+                  name="location" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+                  placeholder="City/area where care is needed"
+                />
+              </div>
+              
+              <div class="md:col-span-2">
+                <label for="careType" class="block text-sm font-semibold text-text-dark mb-2">Care Setting *</label>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <label class="flex items-center">
+                    <input type="radio" name="careType" value="home" class="mr-3 text-coral-warmth">
+                    <span>At Home</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="radio" name="careType" value="care-home" class="mr-3 text-coral-warmth">
+                    <span>Care Home</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="radio" name="careType" value="both" class="mr-3 text-coral-warmth">
+                    <span>Both</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Interest -->
+          <div class="border-b border-gray-200 pb-6">
+            <h3 class="text-2xl font-serif font-semibold text-warm-brown mb-6">Services of Interest</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <label class="flex items-center">
+                <input type="checkbox" name="services" value="heartwood-hour" class="mr-3 text-coral-warmth">
+                <span>The Heartwood Hour (£50)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" name="services" value="wellbeing-walk" class="mr-3 text-coral-warmth">
+                <span>The Wellbeing Walk (£70)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" name="services" value="heart-home-package" class="mr-3 text-coral-warmth">
+                <span>Heart & Home Package (£240)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" name="services" value="nurture-nourish" class="mr-3 text-coral-warmth">
+                <span>Nurture & Nourish (£85)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" name="services" value="care-circle" class="mr-3 text-coral-warmth">
+                <span>Heartwood Care Circle (£320/month)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" name="services" value="not-sure" class="mr-3 text-coral-warmth">
+                <span>Not sure yet</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-sm font-semibold text-text-dark mb-2">Tell Us More</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coral-warmth focus:border-coral-warmth transition-colors"
+              placeholder="Please share any specific needs, concerns, or questions you have about care for your loved one. This helps Kelly prepare for your discovery call."
+            ></textarea>
+          </div>
+
+          <!-- Preferred Contact Method -->
+          <div>
+            <label class="block text-sm font-semibold text-text-dark mb-2">Preferred Contact Method for Discovery Call</label>
+            <div class="flex gap-6">
+              <label class="flex items-center">
+                <input type="radio" name="contactMethod" value="phone" checked class="mr-3 text-coral-warmth">
+                <span>Phone Call</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="contactMethod" value="video" class="mr-3 text-coral-warmth">
+                <span>Video Call</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-6">
+            <button 
+              type="submit" 
+              class="w-full bg-coral-warmth text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-dusty-rose transform hover:-translate-y-1 transition-all shadow-lg"
+            >
+              Send Message & Schedule Discovery Call
+            </button>
+          </div>
+          
+          <p class="text-sm text-text-light text-center">Kelly will respond within 24 hours to schedule your free 20-minute discovery call.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Contact Info -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-semibold text-warm-brown mb-8 text-center">Prefer to Contact Directly?</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-coral-warmth mb-4">📞 Call</h3>
+          <p><a href="tel:07XXXXXXXX" class="text-warm-brown font-semibold hover:text-coral-warmth transition-colors">07XXX XXXXXX</a></p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-coral-warmth mb-4">📧 Email</h3>
+          <p><a href="mailto:hello@heartwoodwellbeing.co.uk" class="text-warm-brown font-semibold hover:text-coral-warmth transition-colors">hello@heartwoodwellbeing.co.uk</a></p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-coral-warmth mb-4">🌍 Website</h3>
+          <p><a href="https://heartwoodwellbeing.co.uk" class="text-warm-brown font-semibold hover:text-coral-warmth transition-colors">heartwoodwellbeing.co.uk</a></p>
+        </div>
+      </div>
+      
+      <div class="bg-off-white rounded-2xl p-8 text-center mb-12">
+        <p class="text-text-dark font-semibold mb-2">Serving [Your Location]. In-home visits and care homes welcome.</p>
+        <p class="text-text-dark font-semibold">Fully insured. Enhanced DBS checked. References available.</p>
+      </div>
+      
+      <blockquote class="bg-sage-green text-white text-center text-xl p-8 rounded-2xl">
+        "We're not just keeping someone company—we're offering peace of mind to families, and a moment of grounded joy to the person you love."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warm-brown text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center space-y-4">
+        <div class="flex items-center space-x-4">
+          <img src="/assets/images/mainlogofinal.jpg" alt="Heartwood Wellbeing Logo" class="h-12 w-auto">
+          <span class="text-xl font-serif font-semibold">Heartwood Wellbeing</span>
+        </div>
+        <p>&copy; 2024 Heartwood Wellbeing. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  // Contact Form Enhancement
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        // Show loading state
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // Let Formspree handle the actual submission
+        // The form will redirect to Formspree's thank you page
+      });
+    }
+  });
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom checkbox and radio styles */
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background-color: #E67B58;
+    border-color: #E67B58;
+  }
+  
+  input[type="checkbox"]:focus,
+  input[type="radio"]:focus {
+    ring-color: #E67B58;
+  }
+</style> 

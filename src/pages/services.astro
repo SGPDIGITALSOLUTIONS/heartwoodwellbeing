@@ -1,0 +1,332 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Services & Pricing - Heartwood Wellbeing">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-4">
+          <img src="/assets/images/mainlogofinal.jpg" alt="Heartwood Wellbeing Logo" class="h-12 w-auto">
+          <span class="text-xl font-serif font-semibold text-warm-brown">Heartwood Wellbeing</span>
+        </div>
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="/" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Home</a></li>
+          <li><a href="/services" class="text-coral-warmth font-medium">Services</a></li>
+          <li><a href="/meet-kelly" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Meet Kelly</a></li>
+          <li><a href="/contact" class="bg-coral-warmth text-white px-6 py-2 rounded-full hover:bg-dusty-rose transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-32 bg-gradient-to-br from-off-white to-natural-beige">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl font-serif font-semibold text-warm-brown mb-6">🌼 Our Services</h1>
+      <p class="text-xl text-text-medium mb-8 max-w-3xl mx-auto">Discover our range of holistic companion care services. <br>Hover over each service to learn more.</p>
+      <div class="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-soft">
+        <span class="text-sage-green mr-2">✨</span>
+        <span class="text-text-dark font-medium">Each session is uniquely tailored to your loved one's needs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid with Hover Reveal -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- The Heartwood Hour -->
+        <div class="service-card group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-96">
+          <div class="absolute inset-0 bg-gradient-to-br from-coral-warmth to-dusty-rose"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          <!-- Default State -->
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-white p-8 group-hover:opacity-0 transition-opacity duration-300">
+            <span class="text-6xl mb-4">🌟</span>
+            <h3 class="text-3xl font-serif font-semibold mb-2">The Heartwood Hour</h3>
+            <p class="text-xl italic text-center">"A gentle reset for body and mind"</p>
+            <div class="mt-6 text-4xl font-bold">£50</div>
+            <div class="text-lg opacity-90">60 minutes</div>
+          </div>
+          
+          <!-- Hover State -->
+          <div class="absolute inset-0 bg-gradient-to-br from-coral-warmth to-dusty-rose opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div class="h-full flex flex-col justify-center p-8 text-white">
+              <h3 class="text-2xl font-serif font-semibold mb-4">The Heartwood Hour</h3>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center"><span class="mr-2">✓</span>Touch therapy (hand or shoulder massage)</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Conversation and light activity</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Aromatherapy & sound elements</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Family update after session</div>
+              </div>
+              <div class="mt-6 text-center">
+                <div class="text-3xl font-bold mb-1">£50</div>
+                <div class="text-sm opacity-90">Perfect for regular visits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Wellbeing Walk -->
+        <div class="service-card group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-96">
+          <div class="absolute inset-0 bg-gradient-to-br from-sage-green to-natural-beige"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          <!-- Default State -->
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-white p-8 group-hover:opacity-0 transition-opacity duration-300">
+            <span class="text-6xl mb-4">🌸</span>
+            <h3 class="text-3xl font-serif font-semibold mb-2">The Wellbeing Walk</h3>
+            <p class="text-xl italic text-center">"A stroll, a chat, and a moment of calm"</p>
+            <div class="mt-6 text-4xl font-bold">£70</div>
+            <div class="text-lg opacity-90">90 minutes</div>
+          </div>
+          
+          <!-- Hover State -->
+          <div class="absolute inset-0 bg-gradient-to-br from-sage-green to-natural-beige opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div class="h-full flex flex-col justify-center p-8 text-white">
+              <h3 class="text-2xl font-serif font-semibold mb-4">The Wellbeing Walk</h3>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center"><span class="mr-2">✓</span>Outdoor walks, light errands</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Aromatherapy roll-on & sensory tools</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Customised per client</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Family follow-up message</div>
+              </div>
+              <div class="mt-6 text-center">
+                <div class="text-3xl font-bold mb-1">£70</div>
+                <div class="text-sm opacity-90">Great for active clients</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Heart & Home Package -->
+        <div class="service-card group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-96 ring-4 ring-golden-amber">
+          <div class="absolute inset-0 bg-gradient-to-br from-golden-amber to-warm-brown"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          <!-- Most Popular Badge -->
+          <div class="absolute top-4 right-4 bg-white text-golden-amber px-3 py-1 rounded-full text-sm font-semibold z-30 transform rotate-12">
+            Most Popular
+          </div>
+          
+          <!-- Default State -->
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-white p-8 group-hover:opacity-0 transition-opacity duration-300">
+            <span class="text-6xl mb-4">✨</span>
+            <h3 class="text-3xl font-serif font-semibold mb-2">Heart & Home Package</h3>
+            <p class="text-xl italic text-center">"Ongoing care with a familiar face"</p>
+            <div class="mt-6 text-4xl font-bold">£240</div>
+            <div class="text-lg opacity-90">5 x 60-minute sessions</div>
+            <div class="bg-white text-golden-amber px-3 py-1 rounded-full text-sm font-semibold mt-2">£10 discount</div>
+          </div>
+          
+          <!-- Hover State -->
+          <div class="absolute inset-0 bg-gradient-to-br from-golden-amber to-warm-brown opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div class="h-full flex flex-col justify-center p-8 text-white">
+              <h3 class="text-2xl font-serif font-semibold mb-4">Heart & Home Package</h3>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center"><span class="mr-2">✓</span>Light massage and sound therapy</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Activity support</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Tailored plan + wellbeing tracker</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Family email/WhatsApp summary</div>
+              </div>
+              <div class="mt-6 text-center">
+                <div class="text-3xl font-bold mb-1">£240</div>
+                <div class="text-sm opacity-90">Best value for regular care</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nurture & Nourish -->
+        <div class="service-card group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-96">
+          <div class="absolute inset-0 bg-gradient-to-br from-dusty-rose to-coral-warmth"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          <!-- Default State -->
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-white p-8 group-hover:opacity-0 transition-opacity duration-300">
+            <span class="text-6xl mb-4">🧘</span>
+            <h3 class="text-3xl font-serif font-semibold mb-2">Nurture & Nourish</h3>
+            <p class="text-xl italic text-center">"A full sensory experience"</p>
+            <div class="mt-6 text-4xl font-bold">£85</div>
+            <div class="text-lg opacity-90">90-minute deluxe visit</div>
+          </div>
+          
+          <!-- Hover State -->
+          <div class="absolute inset-0 bg-gradient-to-br from-dusty-rose to-coral-warmth opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div class="h-full flex flex-col justify-center p-8 text-white">
+              <h3 class="text-2xl font-serif font-semibold mb-4">Nurture & Nourish</h3>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center"><span class="mr-2">✓</span>Hand & arm massage with oils</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Sound healing or guided breathing</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Aromatherapy & warm tea ritual</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Perfect for anxiety & dementia care</div>
+              </div>
+              <div class="mt-6 text-center">
+                <div class="text-3xl font-bold mb-1">£85</div>
+                <div class="text-sm opacity-90">Available as gift voucher!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Heartwood Care Circle -->
+        <div class="service-card group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-96">
+          <div class="absolute inset-0 bg-gradient-to-br from-warm-brown to-sage-green"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          <!-- Default State -->
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-white p-8 group-hover:opacity-0 transition-opacity duration-300">
+            <span class="text-6xl mb-4">💌</span>
+            <h3 class="text-3xl font-serif font-semibold mb-2">Heartwood Care Circle</h3>
+            <p class="text-xl italic text-center">"Monthly plan with peace of mind"</p>
+            <div class="mt-6 text-4xl font-bold">£320</div>
+            <div class="text-lg opacity-90">4 x 90-minute sessions/month</div>
+            <div class="bg-white text-warm-brown px-3 py-1 rounded-full text-sm font-semibold mt-2">£20 off bundle</div>
+          </div>
+          
+          <!-- Hover State -->
+          <div class="absolute inset-0 bg-gradient-to-br from-warm-brown to-sage-green opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div class="h-full flex flex-col justify-center p-8 text-white">
+              <h3 class="text-2xl font-serif font-semibold mb-4">Heartwood Care Circle</h3>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center"><span class="mr-2">✓</span>Priority booking & flexible rescheduling</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Monthly wellness summary report</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Optional personalised playlist</div>
+                <div class="flex items-center"><span class="mr-2">✓</span>Optional keepsake journal</div>
+              </div>
+              <div class="mt-6 text-center">
+                <div class="text-3xl font-bold mb-1">£320</div>
+                <div class="text-sm opacity-90">Complete monthly care solution</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What's Included Overview -->
+        <div class="service-card group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-96">
+          <div class="absolute inset-0 bg-gradient-to-br from-natural-beige to-off-white"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+          
+          <!-- Default State -->
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-warm-brown p-8 group-hover:opacity-0 transition-opacity duration-300">
+            <span class="text-6xl mb-4">🌿</span>
+            <h3 class="text-3xl font-serif font-semibold mb-2">What's Included</h3>
+            <p class="text-xl italic text-center">"Every session is unique"</p>
+            <div class="mt-6 text-lg font-medium">Hover to see what makes<br>Heartwood special</div>
+          </div>
+          
+          <!-- Hover State -->
+          <div class="absolute inset-0 bg-gradient-to-br from-natural-beige to-off-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div class="h-full flex flex-col justify-center p-6 text-warm-brown">
+              <h3 class="text-xl font-serif font-semibold mb-4">Each Session May Include:</h3>
+              <div class="space-y-1 text-sm">
+                <div class="flex items-center"><span class="mr-2">🧡</span>Gentle touch therapy</div>
+                <div class="flex items-center"><span class="mr-2">🎵</span>Calming sound therapy</div>
+                <div class="flex items-center"><span class="mr-2">🌿</span>Aromatherapy</div>
+                <div class="flex items-center"><span class="mr-2">📖</span>Meaningful conversation</div>
+                <div class="flex items-center"><span class="mr-2">🎨</span>Light activities</div>
+                <div class="flex items-center"><span class="mr-2">🚶</span>Walks & outings</div>
+                <div class="flex items-center"><span class="mr-2">💌</span>Family follow-up</div>
+              </div>
+              <div class="mt-4 text-center">
+                <div class="text-sm italic">No two sessions are alike</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Information -->
+  <section class="py-20 bg-off-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 shadow-soft">
+        <h2 class="text-3xl font-serif font-semibold text-warm-brown mb-6 text-center">💡 Good to Know</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold text-coral-warmth mb-4">✨ What Makes Us Special</h3>
+            <ul class="space-y-2 text-text-medium">
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>All sessions include therapeutic tools</li>
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Family follow-up after every visit</li>
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Bespoke packages available</li>
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Gift vouchers available</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-semibold text-coral-warmth mb-4">📋 Booking Details</h3>
+            <ul class="space-y-2 text-text-medium">
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Minimum booking: 1 hour</li>
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Travel time included locally</li>
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Extended travel fee applies</li>
+              <li class="flex items-start"><span class="text-sage-green mr-2">•</span>Fully insured & DBS checked</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mt-8 text-center">
+          <a href="/contact" class="inline-block bg-coral-warmth text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-dusty-rose transform hover:-translate-y-1 transition-all shadow-lg">
+            Book Your Discovery Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warm-brown text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center space-y-4">
+        <div class="flex items-center space-x-4">
+          <img src="/assets/images/mainlogofinal.jpg" alt="Heartwood Wellbeing Logo" class="h-12 w-auto">
+          <span class="text-xl font-serif font-semibold">Heartwood Wellbeing</span>
+        </div>
+        <p>&copy; 2024 Heartwood Wellbeing. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Service Card Hover Effects */
+  .service-card {
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: perspective(1000px) rotateY(5deg) scale(1.05);
+  }
+  
+  /* Gradient Animations */
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .service-card:hover .absolute {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .service-card {
+      height: 300px;
+    }
+    
+    .service-card:hover {
+      transform: scale(1.02);
+    }
+  }
+</style> 

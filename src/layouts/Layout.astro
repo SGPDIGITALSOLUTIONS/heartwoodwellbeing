@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Holistic companion care for seniors. Led by Kelly, a trained Holistic Therapist offering gentle touch therapy, sound healing, and aromatherapy." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heartwoodwellbeing.co.uk/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://heartwoodwellbeing.co.uk/" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    
+    <title>{title}</title>
+  </head>
+  <body class="font-sans text-text-dark bg-off-white">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<script>
+  // Import fonts
+  import '@fontsource/inter/300.css';
+  import '@fontsource/inter/400.css';
+  import '@fontsource/inter/500.css';
+  import '@fontsource/inter/600.css';
+  import '@fontsource/inter/700.css';
+  import '@fontsource/cormorant-garamond/300.css';
+  import '@fontsource/cormorant-garamond/400.css';
+  import '@fontsource/cormorant-garamond/500.css';
+  import '@fontsource/cormorant-garamond/600.css';
+  import '@fontsource/cormorant-garamond/700.css';
+</script> 

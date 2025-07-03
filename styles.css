@@ -1,0 +1,41 @@
+/* Heartwood Wellbeing - Brand Colors */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --dusty-rose: #C59684;
+    --warm-brown: #895620;
+    --natural-beige: #B79F80;
+    --golden-amber: #D89F42;
+    --coral-warmth: #E67B58;
+    --sage-green: #A2A182;
+
+    /* Additional colors for design */
+    --white: #ffffff;
+    --off-white: #faf9f7;
+    --text-dark: #2c2c2c;
+    --text-medium: #5a5a5a;
+    --text-light: #8a8a8a;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--off-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--warm-brown);
+}
+
+/* Additional CSS omitted for brevity */
