@@ -132,7 +132,7 @@ Choosing the right care is deeply personal. That's why we offer a **free 20-minu
 
 ### Contact Information
 
-- 📞 **Call:** 07XXX XXXXXX
+- 📞 **Whatsapp**
 - 📧 **Email:** hello@heartwoodwellbeing.co.uk
 - 🌍 **Website:** heartwoodwellbeing.co.uk
 
