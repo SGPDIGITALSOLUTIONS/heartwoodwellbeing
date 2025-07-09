@@ -1,25 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Meet Kelly - Heartwood Wellbeing">
-  <!-- Navigation -->
-  <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-4">
-        <div class="flex items-center space-x-4">
-          <img src="/assets/images/mainlogofinal.jpg" alt="Heartwood Wellbeing Logo" class="h-12 w-auto">
-          <span class="text-xl font-serif font-semibold text-warm-brown">Heartwood Wellbeing</span>
-        </div>
-        <ul class="hidden md:flex space-x-8">
-          <li><a href="/" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Home</a></li>
-          <li><a href="/services" class="text-text-dark hover:text-coral-warmth font-medium transition-colors">Services</a></li>
-          <li><a href="/meet-kelly" class="text-coral-warmth font-medium">Meet Kelly</a></li>
-          <li><a href="/contact" class="bg-coral-warmth text-white px-6 py-2 rounded-full hover:bg-dusty-rose transition-colors">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <Navigation />
 
   <!-- Meet Kelly -->
   <section class="py-32">
@@ -41,18 +27,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-warm-brown text-white py-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col items-center space-y-4">
-        <div class="flex items-center space-x-4">
-          <img src="/assets/images/mainlogofinal.jpg" alt="Heartwood Wellbeing Logo" class="h-12 w-auto">
-          <span class="text-xl font-serif font-semibold">Heartwood Wellbeing</span>
-        </div>
-        <p>&copy; 2024 Heartwood Wellbeing. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <Footer />
 </Layout>
 
 <style>
