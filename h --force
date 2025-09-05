@@ -1,0 +1,5 @@
+[33m046116d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Add context information to testimonial references (Keren, Patricia, Amy)
+[33mb06210c[m Update services page with pricing image and add testimonials
+[33m142854d[m Update page headers and add Kelly's image to Meet Kelly page - Added Kelly's photo with text wrapping on Meet Kelly page - Updated Kelly text to first person with new content - Standardized header sizes to text-5xl across all pages - Replaced services hero with logo-only header - Added responsive service interaction instructions
+[33m809f0d9[m Refactor navigation and footer to global components - Updated Navigation component to work with multi-page navigation - Created reusable Footer component - Replaced inline navigation/footer code in all pages - Added active state highlighting for current page - Improved code maintainability and consistency
+[33ma8dd8d7[m updated website
