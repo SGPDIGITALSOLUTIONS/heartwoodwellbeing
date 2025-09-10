@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Massage Services - Heartwood Wellbeing">
+  <Navigation />
+
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-amber-600 via-yellow-600 to-orange-500">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-6xl font-serif font-bold text-white mb-6">Massage Services</h1>
+      <p class="text-xl text-amber-100 mb-8 max-w-3xl mx-auto">
+        Professional massage therapy designed to help you feel relaxed, restored, and at ease in your body
+      </p>
+    </div>
+  </section>
+
+  <!-- Massage Price Images Section -->
+  <section class="py-20 bg-gradient-to-b from-amber-50 to-yellow-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-serif font-semibold text-amber-900 mb-12 text-center">Our Massage Treatments</h2>
+      
+      <!-- First Price Image -->
+      <div class="mb-12">
+        <div class="flex justify-center">
+          <img 
+            src="/assets/images/massageprice1.jpg" 
+            alt="Massage Service Menu - Seated Neck and Shoulder Massage, Comfort and Calm Ankle Therapy, Restorative Wellness Massage" 
+            class="max-w-full h-auto rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2"
+          />
+        </div>
+      </div>
+
+      <!-- Second Price Image -->
+      <div class="mb-12">
+        <div class="flex justify-center">
+          <img 
+            src="/assets/images/massageprice2.jpg" 
+            alt="Massage Service Menu - Deep Tissue Massage, Hot Stone Massage, Kelly's Signature Treatment, The Grounding Experience, Kelly's Deluxe Treatment" 
+            class="max-w-full h-auto rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Kelly's Massage Services -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-xl">
+        <h2 class="text-3xl font-serif font-semibold text-amber-900 mb-6 text-center">About Kelly's Massage Therapy</h2>
+        <p class="text-lg text-amber-800 mb-6 leading-relaxed">
+          Kelly brings her passion for helping people feel relaxed and restored to every massage session. 
+          With professional training and a deep understanding of therapeutic techniques, she creates a 
+          personalized experience that addresses your specific needs and promotes overall wellbeing.
+        </p>
+        <p class="text-lg text-amber-800 mb-8 leading-relaxed">
+          From gentle relaxation to deep tissue work, hot stone therapy to signature treatments, 
+          Kelly offers a comprehensive range of massage services designed to help you unwind, 
+          destress, and reconnect with your body.
+        </p>
+        
+        <div class="text-center">
+          <a href="https://wa.me/447931220197" class="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:from-green-600 hover:to-green-500 transform hover:-translate-y-2 transition-all duration-300 shadow-2xl hover:shadow-3xl">
+            Contact Kelly on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Services CTA -->
+  <section class="py-16 bg-gradient-to-r from-amber-600 to-orange-500">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h3 class="text-2xl font-serif font-semibold text-white mb-6">Looking for In-Care Services?</h3>
+      <p class="text-amber-100 mb-8">
+        Kelly also provides specialized wellbeing services for residents in care homes
+      </p>
+      <a href="/services" class="inline-block bg-white text-amber-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-100 transform hover:-translate-y-1 transition-all duration-300 shadow-lg">
+        View In-Care Services
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+  }
+</style>
