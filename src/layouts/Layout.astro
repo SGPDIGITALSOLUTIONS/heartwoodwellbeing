@@ -1,4 +1,6 @@
 ---
+import CookieBanner from '../components/CookieBanner.astro';
+
 export interface Props {
   title: string;
   description?: string;
@@ -32,6 +34,7 @@ const { title, description = "Holistic companion care for seniors. Led by Kelly,
   </head>
   <body class="font-sans text-text-dark bg-off-white">
     <slot />
+    <CookieBanner />
   </body>
 </html>
 
